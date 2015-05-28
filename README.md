@@ -1,2 +1,1 @@
-# Kelompok-5
-Kelompok Rekayasa Perangkat Lunak (RPL)
+Ade Rina Alfithra Haridhy (1408107010078)
