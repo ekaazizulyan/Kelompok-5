@@ -1,2 +1,1 @@
-# Kelompok-5
-Kelompok Rekayasa Perangkat Lunak (RPL)
+Sarah Rahmany (1308107010034)
