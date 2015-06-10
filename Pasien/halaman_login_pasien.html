@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+
+		<title>Klinik Sehat</title>
+
+		<meta http-equiv = "content-type" content="text/html; charset=utf-8" />
+		
+		<!-- Untuk membuat viewport bisa untuk semua device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bootstrap.min.css">
+
+	</head>
+
+	<body style="background-color: #eee;">
+		<!-- header -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<!-- Tampilkan brand dan toggle jika mobile view -->
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-menu">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button> <!-- end button -->
+
+						<a href="halaman_awal_pasien.html" class="navbar-brand">
+							<span style="color: #fff;">Klinik Sehat</span>
+						</a> <!-- end brand -->
+				</div> <!-- end header -->
+
+				<!-- menu untuk toggle -->
+				<div class="collapse navbar-collapse" id="main-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="halaman_login_pasien.html">Login</a></li>
+						<li><a href="halaman_registrasi_pasien.html">Daftar</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</div> <!-- end collapse -->
+			</div> <!-- end container -->
+		</nav> <!-- end of navigation -->
+
+		<!-- content -->
+		<div class="container">
+			<!-- tulisan awal -->
+			<center>
+				<div style="font-size: 20pt; color: #428bca;"><strong>SELAMAT DATANG !<br><small>Log in to your account</small></strong></div>
+			</center>
+
+			<!-- form -->
+			<div class="form-group">
+			    <input type="text" class="form-control" id="username" placeholder="Username">
+			    <input type="password" class="form-control" id="password" placeholder="Password">
+			</div>
+
+			<center>
+				<a href="#"><div class="btn btn-primary btn-block">LOGIN</div></a>
+				<a href="#"><div class="btn btn-link btn-block">Forgot Password ?</div></a>
+			</center>
+		</div>
+
+		<!-- footer -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<center>
+					<a href="#"><img src="facebook.png" alt="Facebook" width="40"></a> 
+					<a href="#"><img src="twitter.png" alt="Twitter" width="40"></a> 
+					<a href="#"><img src="g+.png" alt="Google+" width="40"></a>
+				</center>
+			</div> <!-- end container -->
+		</nav> <!-- end of navigation -->
+
+
+    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="jquery-1.11.1.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="bootstrap.min.js"></script>
+	</body>
+</html>
