@@ -1,0 +1,171 @@
+<html>
+	<head>
+		<title>Klinik sehat</title>
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		<link href="css/navbar.css.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- <link href="custom.css" rel="stylesheet"> -->
+		<style>
+			.padding {
+				padding-top: 70px;
+			}
+		</style> 
+		<link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+	</head>
+	<body>
+		<nav role="navigation" class="navbar navbar-inverse">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="index_2.html" class="navbar-brand">DOKTER</a>
+    </div>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="#">PERAWAT</a></li>
+            <li><a href="#">APOTEKER</a>
+        </ul>     
+    </div>
+</nav>
+<ul class="tab-container">
+  <!-- Menu tab -->
+<input type="radio" name="tab-menu" class="tab-menu-radio" id="tab-menu1" checked />
+<label for="tab-menu1" class="tab-menu">PROFILE</label>
+
+<input type="radio" name="tab-menu" class="tab-menu-radio" id="tab-menu2"/>
+<label for="tab-menu2" class="tab-menu">DIAGNOSA</label>
+
+<input type="radio" name="tab-menu" class="tab-menu-radio" id="tab-menu3"/>
+<label for="tab-menu3" class="tab-menu">RESEP</label>
+<!-- End Menu tab -->
+
+<div class="tab-content">
+<!-- Konten tab -->
+<div class="tab tab-2">
+	<div class="theme col-md-8 col-md-offset-6">
+	<ul class="nav nav-pills">
+		<li class="active" role="presentation"><a data-toggle="modal" data-target="#mymodal" href="#">Tambah</a></li>
+		<table class="table">
+    		<thead>
+        	<tr>
+            <th>NO</th>
+            <th>TANGGAL</th>
+            <th>ID PASIEN</th>
+            <th>TINDAKAN</th>
+        	</tr>
+    </thead>
+    </ul>
+    <tbody>
+        <tr class="active">
+            <td>1</td>
+            <td>04/07/2014</td>
+            <td>A01</td>
+            <td><a data-toggle="modal" data-target="#Mymodal" href="#"<button class="btn btn-primary">Lihat&nbsp&nbsp<span class="glyphicon glyphicon-eye-open"></span></button></a></td>
+        </tr>
+        <tr class="success">
+            <td>2</td>
+            <td>01/07/2014</td>
+            <td>A02</td>
+            <td><a data-toggle="modal" data-target="#MYmodal" href="#"<button class="btn btn-primary">Lihat&nbsp&nbsp<span class="glyphicon glyphicon-eye-open"></span></button></a></td>
+        </tr>
+        <tr class="info">
+            <td>3</td>
+            <td>05/07/2014</td>
+            <td>A03</td>
+            <td><a data-toggle="modal" data-target="#MYModal" href="#"<button class="btn btn-primary">Lihat&nbsp&nbsp<span class="glyphicon glyphicon-eye-open"></span></button></a></td>
+        </tr>
+        </tbody>
+</table>
+</div>
+</div>
+<div id="mymodal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center"><strong>TAMBAH DIAGNOSA</strong></h4>
+      </div>
+      <div class="modal-body">
+        <p><strong>ID PASIEN</strong><input type="text" class="form-control"></p>
+        <p><strong>DIAGNOSA</strong><textarea class="form-control" rows="3"></textarea></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div id="Mymodal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center"><strong>LIHAT DIAGNOSA</strong></h4>
+      </div>
+      <div class="modal-body">
+        <p><strong>ID PASIEN</strong><input type="text" class="form-control" id="disabledInput" value="AO1" disabled></p>
+        <p><strong>NAMA DOKTER</strong><input type="text" class="form-control" id="disabledInput" value="Dr.dr.Maulana,Sp.K" disabled></p>
+        <br>
+        <p><strong>DIAGNOSA</strong><textarea class="form-control" id="disabledInput" rows="3" disabled>pasien menderita gejala seperti berikut: demam tinggi, batuk berdahak, kulit memerah</textarea></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="MYmodal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center"><strong>LIHAT DIAGNOSA</strong></h4>
+      </div>
+      <div class="modal-body">
+        <p><strong>ID PASIEN</strong><input type="text" class="form-control" id="disabledInput" value="AO2" disabled></p>
+        <p><strong>NAMA DOKTER</strong><input type="text" class="form-control" id="disabledInput" value="Dr.dr.Khalid Farhan, Sp.OB" disabled></p>
+        <br>
+        <p><strong>DIAGNOSA</strong><textarea class="form-control" id="disabledInput" rows="3" disabled>pasien menderita gejala seperti berikut: janin mengecil, kejang-kejang, meriang dan mimisan </textarea></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="MYModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center"><strong>LIHAT DIAGNOSA</strong></h4>
+      </div>
+      <div class="modal-body">
+        <p><strong>ID PASIEN</strong><input type="text" class="form-control" id="disabledInput" value="AO3" disabled></p>
+        <p><strong>NAMA DOKTER</strong><input type="text" class="form-control" id="disabledInput" value="Dr.dr.Wahyu Maori,Sp.THT" disabled></p>
+        <br>
+        <p><strong>DIAGNOSA</strong><textarea class="form-control" id="disabledInput" rows="3" disabled>pasien menderita gejala seperti berikut: telinga berdengung, susah bernafas, susah mendengar dan tidur mendengkur</textarea></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+	</body> 
+</html>
