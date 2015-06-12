@@ -18,6 +18,8 @@
 <script  type="text/javascript" language="javascript">
 $(document).ready(function(){
 	$(".popup").css('display','none')
+	$(".diagnosa1").css('display','none')
+	$(".diagnosa1edit").css('display','none')
 	$(".tambahdiagnosa").click(function(){
 		$(".popup").animate({width: 'show'}, 'slow');
 		$(".cancel").click(function(){	
@@ -29,6 +31,21 @@ $(document).ready(function(){
 		})
 		$(".closeBtn").click(function(){			
 			$(".popup").css('display', 'none');
+			
+		})
+	})
+	$(".d1").click(function(){
+		$(".diagnosa1").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa1").css('display','none');
+			$(".diagnosa1edit").animate({width: 'show'}, 'slow');
+			$(".closeBtn").click(function(){			
+				$(".diagnosa1edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa1").css('display', 'none');
 			
 		})
 	})
@@ -80,7 +97,7 @@ $(document).ready(function(){
 </table>
 <table width="1053" height="148" align="center" style="border-collapse:collapse;">
   <tr>
-    <td width="237" height="44"><div align="center"><strong><u>21/5/2008</u></strong></div></td>
+    <td width="237" height="44" ><div align="center" class="d1"><strong><a href="#">21/5/2008</a></strong></div></td>
     <td width="268"><div align="center"><strong><u>31/12/2009</u></strong></div></td>
     <td width="259"><div align="center"><strong><u>12/3/2011</u></strong></div></td>
     <td width="269"><div align="center"><strong><u>1/9/2011</u></strong></div></td>
@@ -106,8 +123,6 @@ $(document).ready(function(){
   </tr>
 </table>
 
-
-
 <div class="popup">
 	<div class="popupGrayBg"></div>
 	<div class="QTPopupCntnr">
@@ -125,12 +140,12 @@ $(document).ready(function(){
 					<table width="100%" cellpadding="0" cellspacing="0">
 						
 						<textarea id="textfield" cols="57" rows="25" align= "left">
-						Pasien menderita parkinson dengan gejala:
-						-merasa lemah atau terasa lebih kaku pada sebagian tubuh
-						-gemetaran halus pada salah satu tangan saat istirahat
-						Hindari:
-						makanan dengan gula tinggi, berpengawet, junk food, alkohol dan minuman bersoda
-						</textarea></td>
+						     Pasien menderita parkinson dengan gejala:
+						          -merasa lemah atau terasa lebih kaku pada sebagian tubuh
+						          -gemetaran halus pada salah satu tangan saat istirahat
+						     Hindari:
+						     makanan dengan gula tinggi, berpengawet, junk food, alkohol dan minuman bersoda
+						</textarea>
 						<br><br><br>
 						<tr>
 						<td>
@@ -149,5 +164,94 @@ $(document).ready(function(){
 		<div class="gpBdrBottom"></div>
 	</div>
 </div>
+
+<div class="diagnosa1">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita ISPA dengan gejala:</p>
+						<p>-Hidung tersumbat atau berair.</p>
+						<p>-Para-paru terasa terhambat.</p>
+						<p>-Batuk-batuk dan tenggorokan terasa sakit.</p>
+						<p>-Kerap merasa kelelahan.</p>
+						<p>-Tubuh merasa sakit.</p>
+						<p>Hindari:</p>
+						<p>-Menyentuh bagian wajah, terutama mulut, hidung, dan mata, agar Anda terlindung dari penyebaran virus dan bakteri.</p>
+						<p>-Merokok</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa1edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+						    Pasien menderita ISPA dengan gejala: 
+							-Hidung tersumbat atau berair. 
+							-Para-paru terasa terhambat. 
+							-Batuk-batuk dan tenggorokan terasa sakit. 
+							-Kerap merasa kelelahan. 
+							-Tubuh merasa sakit. 
+							Hindari: 
+							-Menyentuh bagian wajah, terutama mulut, hidung, dan mata, agar Anda terlindung dari penyebaran virus dan bakteri. 
+							-Merokok 
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+
 </body>
 </html>
