@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Klinik sehat</title>
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<style>
+			.padding {
+				padding-top: 70px;
+			}
+			.center{
+				text-align: center;
+			}
+			.body{
+				background-color: #c5c5c5;
+			}
+			.border{
+				border-right:5px  #9f9f9f solid;
+				border-bottom:5px #9f9f9f solid;
+				border-left:5px #9f9f9f solid;
+			}
+		</style>
+
+	</head>
+	<body class="body">
+
+		<div class="navbar navbar-default">
+			<div class="container">
+				<a href="#" class="navbar-brand text-center">Klinik Sehat</a>
+			</div>
+		</div>
+		<div class="container" style="background-color:#fff;margin:20 0 20 0;padding:10 0 10 0">
+		<p class="center" style="font-size:19">
+			<b>SELAMAT !!!</b><br>Permintaan anda segera di proses
+		</p>
+		</div>
+		
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var i = 1;
+				for(; i < 101; i++){
+					$("#tiket").append("<option>"+ i +"</option>");
+				}
+			});
+		</script>
+
+	</body> 
+</html>
