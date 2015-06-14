@@ -20,6 +20,8 @@ $(document).ready(function(){
 	$(".popup").css('display','none')
 	$(".diagnosa1").css('display','none')
 	$(".diagnosa1edit").css('display','none')
+	$(".diagnosa2").css('display','none')
+	$(".diagnosa2edit").css('display','none')
 	$(".tambahdiagnosa").click(function(){
 		$(".popup").animate({width: 'show'}, 'slow');
 		$(".cancel").click(function(){	
@@ -39,6 +41,12 @@ $(document).ready(function(){
 		$(".edit").click(function(){
 			$(".diagnosa1").css('display','none');
 			$(".diagnosa1edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa1edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa1edit").css('display', 'none');
+			})
 			$(".closeBtn").click(function(){			
 				$(".diagnosa1edit").css('display', 'none');
 				
@@ -46,6 +54,28 @@ $(document).ready(function(){
 		})
 		$(".closeBtn").click(function(){			
 			$(".diagnosa1").css('display', 'none');
+			
+		})
+	})
+	
+	$(".d2").click(function(){
+		$(".diagnosa2").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa2").css('display','none');
+			$(".diagnosa2edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa2edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa2edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa2edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa2").css('display', 'none');
 			
 		})
 	})
@@ -86,7 +116,7 @@ $(document).ready(function(){
   <tr>
     <td height="51">Riwayat Penyakit </td>
     <td>:</td>
-    <td colspan="2">Ispa, CND, Prostat Hypertropi, Derita Alergi, Movicox Iny, Katarak, Bendungan Paru Ringan </td>
+    <td colspan="2">Ispa, CAD, Prostat Hypertropi, Derita Alergi, Movicox Iny, Katarak, Bendungan Paru Ringan </td>
   </tr>
   <tr>
     <td height="55">Diagnosa</td>
@@ -98,7 +128,7 @@ $(document).ready(function(){
 <table width="1053" height="148" align="center" style="border-collapse:collapse;">
   <tr>
     <td width="237" height="44" ><div align="center" class="d1"><strong><a href="#">21/5/2008</a></strong></div></td>
-    <td width="268"><div align="center"><strong><u>31/12/2009</u></strong></div></td>
+    <td width="268"><div align="center" class="d2"><strong><a href="#">31/12/2009</a></strong></div></td>
     <td width="259"><div align="center"><strong><u>12/3/2011</u></strong></div></td>
     <td width="269"><div align="center"><strong><u>1/9/2011</u></strong></div></td>
   </tr>
@@ -145,6 +175,97 @@ $(document).ready(function(){
 						          -gemetaran halus pada salah satu tangan saat istirahat
 						     Hindari:
 						     makanan dengan gula tinggi, berpengawet, junk food, alkohol dan minuman bersoda
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa2">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita CAD dengan gejala:</p>
+						<p>-Sesak napas</p>
+						<p>-Mual, muntah, dan berkeringat dingin</p>
+						<p>-Perasaan gangguan pencernaan atau mulas</p>
+						<p>-Unexplained kelelahan setelah aktivitas (lebih umum pada wanita)</p>
+						<p>-Pusing atau sakit kepala ringan</p>
+						<p>-palpitasi</p>
+						<p>Hindari:</p>
+						<p>-Makanan mengandung kolesterol.</p>
+						<p>-Makanan mengandung trigleserin.</p>
+						<p>-Makanan mengandung gula alkoholik. Minuman alkohol, durian dan tape.</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa2edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+							Pasien menderita CAD dengan gejala: 
+							-Sesak napas 
+							-Mual, muntah, dan berkeringat dingin 
+							-Perasaan gangguan pencernaan atau mulas 
+							-Unexplained kelelahan setelah aktivitas
+							-Pusing atau sakit kepala ringan 
+							-palpitasi 
+							Hindari: 
+							-Makanan mengandung kolesterol. 
+							-Makanan mengandung trigleserin. 
+							-Makanan mengandung gula alkoholik. Minuman alkohol, durian dan tape. 
 						</textarea>
 						<br><br><br>
 						<tr>
@@ -251,7 +372,6 @@ $(document).ready(function(){
 		<div class="gpBdrBottom"></div>
 	</div>
 </div>
-
 
 </body>
 </html>
