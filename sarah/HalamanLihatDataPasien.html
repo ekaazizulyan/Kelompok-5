@@ -28,6 +28,8 @@ $(document).ready(function(){
 	$(".diagnosa4edit").css('display','none')
 	$(".diagnosa5").css('display','none')
 	$(".diagnosa5edit").css('display','none')
+	$(".diagnosa6").css('display','none')
+	$(".diagnosa6edit").css('display','none')
 	$(".tambahdiagnosa").click(function(){
 		$(".popup").animate({width: 'show'}, 'slow');
 		$(".cancel").click(function(){	
@@ -148,6 +150,27 @@ $(document).ready(function(){
 			
 		})
 	})
+	$(".d6").click(function(){
+		$(".diagnosa6").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa6").css('display','none');
+			$(".diagnosa6edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa6edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa6edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa6edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa6").css('display', 'none');
+			
+		})
+	})
 })
 </script>
 </head>
@@ -185,7 +208,7 @@ $(document).ready(function(){
   <tr>
     <td height="51">Riwayat Penyakit </td>
     <td>:</td>
-    <td colspan="2">Ispa, CAD, Prostat Hypertropi, Derita Alergi, Movicox Iny, Katarak, Bendungan Paru Ringan </td>
+    <td colspan="2">Ispa, CAD, Prostat Hypertropi, Derita Alergi, Osteoarthritis, Katarak, Bendungan Paru Ringan </td>
   </tr>
   <tr>
     <td height="55">Diagnosa</td>
@@ -203,7 +226,7 @@ $(document).ready(function(){
   </tr>
   <tr>
     <td height="44"><div align="center" class="d5"><strong><a href="#">5/8/2012</a></strong></div></td>
-    <td><div align="center"><strong><u>13/1/2013</u></strong></div></td>
+    <td><div align="center" class="d6"><strong><a href="#">13/1/2013</a></strong></div></td>
     <td><div align="center"><strong><u>30/11/2014</u></strong></div></td>
     <td><div align="center"></div></td>
   </tr>
@@ -655,7 +678,7 @@ $(document).ready(function(){
 				<div class="content">
 					<table width="100%" cellpadding="0" cellspacing="0">
 						
-						<p>Pasien menderita Gejala Osteoarthritis dengan gejala:</p>
+						<p>Pasien menderita Osteoarthritis dengan gejala:</p>
 						<p>-Rasa nyeri yang mendalam</p>
 						<p>-Kesulitan memakai baju atau menyisir rambut</p>
 						<p>-Kesulitan mencengkeram benda</p>
@@ -705,7 +728,7 @@ $(document).ready(function(){
 					<table width="100%" cellpadding="0" cellspacing="0">
 						
 						<textarea id="textfield" cols="57" rows="25" align= "left">
-							Pasien menderita Gejala Osteoarthritis dengan gejala:
+							Pasien menderita Osteoarthritis dengan gejala:
 							-Rasa nyeri yang mendalam
 							-Kesulitan memakai baju atau menyisir rambut
 							-Kesulitan mencengkeram benda
@@ -722,6 +745,95 @@ $(document).ready(function(){
 							-Minuman berkafein seperti teh dan kopi
 							-Buah-buahan seperti lemon, jeruk nipis, dan jeruk
 							-Semua produk susu pasteurisasi
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa6">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Katarak dengan gejala:</p>
+						<p>-Pandangan mata yang kabur, suram atau seperti ada bayangan awan atau asap</p>
+						<p>-Sulit melihat pada malam hari</p>
+						<p>-Sensitif pada cahaya</p>
+						<p>-Terdapat lingkaran cahaya saat memandang sinar</p>
+						<p>-Membutuhkan cahaya terang untuk membaca atau ketika beraktifitas</p>
+						<p>-Sering mengganti kacamata atau lensa kontak karena ketidaknyamanan tersebut</p>
+						<p>-Warna memudar atau cenderung menguning saat melihat</p>
+						<p>-Pandangan ganda jika melihat dengan satu mata</p>
+						<p>Segera lakukan operasi.</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa6edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+								Pasien menderita Katarak dengan gejala:
+								-Pandangan mata yang kabur, suram atau seperti ada bayangan awan atau asap
+								-Sulit melihat pada malam hari
+								-Sensitif pada cahaya
+								-Terdapat lingkaran cahaya saat memandang sinar
+								-Membutuhkan cahaya terang untuk membaca atau ketika beraktifitas
+								-Sering mengganti kacamata atau lensa kontak karena ketidaknyamanan tersebut
+								-Warna memudar atau cenderung menguning saat melihat
+								-Pandangan ganda jika melihat dengan satu mata
+								Segera lakukan operasi. 
 						</textarea>
 						<br><br><br>
 						<tr>
