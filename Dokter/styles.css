@@ -1,0 +1,91 @@
+#cssmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 277px;
+  position: relative;
+  display: block;
+  height: 36px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  background: transparent url("images/off.gif") repeat-x top left;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: 4px solid #555555;
+  border-top: 1px solid #919191;
+  margin-left: 250px;
+}
+#cssmenu li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu li a {
+  display: block;
+  float: left;
+  color: #8c3a3a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 20px 0 20px;
+  height: 24px;
+  background: transparent url("images/divider.gif") no-repeat top right;
+}
+#cssmenu li a:hover {
+  background: transparent url("images/hover.gif") no-repeat top right;
+  color: #8c3a3a;
+}
+.col-md-8{
+margin-top:30px;
+
+}
+.theme{
+  background-color:#90EE90;
+  padding-top:20px;
+  border-radius: 15px; 
+ }
+
+
+
+
+/* Tab menu styling*/
+input.tab-menu-radio {
+display: none;
+}
+label.tab-menu {
+display: inline-block;
+float: left;
+padding:10px 30px;
+cursor: pointer;
+z-index: 99;
+}
+/* End Tab menu styling*//* Tab content styling*/
+.tab-content {
+top:-3px;
+clear: both;
+width: 70%;
+/*position: relative;*/
+padding: 10px 0px 0px 400px ;
+}
+/* End Tab content styling*//* CSS tab core */
+.tab-menu-radio:checked + label {
+-webkit-transition:all 1s; /* Optional */
+-moz-transition:all 1s; /* Optional */
+transition:all 1s; /* Optional */
+background-color: #333;
+color: #fff;
+}
+.tab-content .tab {
+height: 0;
+opacity: 0;
+}
+#tab-menu1:checked ~ .tab-content .tab-1,
+#tab-menu2:checked ~ .tab-content .tab-2,
+#tab-menu3:checked ~ .tab-content .tab-3 {
+-webkit-transition:opacity 1s; /* Optional */
+-moz-transition:opacity 1s; /* Optional */
+transition:opacity 1s; /* Optional */
+height: auto;
+opacity: 1;
+}
+/* End CSS tab core */
