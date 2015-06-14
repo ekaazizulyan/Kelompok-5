@@ -104,7 +104,6 @@ $(document).ready(function(){
 			
 		})
 	})
-<<<<<<< HEAD
 	$(".d4").click(function(){
 		$(".diagnosa4").animate({width: 'show'}, 'slow');
 		$(".edit").click(function(){
@@ -126,8 +125,27 @@ $(document).ready(function(){
 			
 		})
 	})
-=======
->>>>>>> master
+	$(".d5").click(function(){
+		$(".diagnosa5").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa5").css('display','none');
+			$(".diagnosa5edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa5edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa5edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa5edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa5").css('display', 'none');
+			
+		})
+	})
 })
 </script>
 </head>
@@ -180,10 +198,9 @@ $(document).ready(function(){
     <td width="268"><div align="center" class="d2"><strong><a href="#">31/12/2009</a></strong></div></td>
     <td width="259"><div align="center" class="d3"><strong><a href="#">12/3/2011</a></strong></div></td>
     <td width="269"><div align="center" class="d4"><strong><a href="#">1/9/2011</a></strong></div></td>
-    <td width="269"><div align="center"><strong><u>1/9/2011</u></strong></div></td>
   </tr>
   <tr>
-    <td height="44"><div align="center"><strong><u>5/8/2012</u></strong></div></td>
+    <td height="44"><div align="center" class="d5"><strong><a href="#">5/8/2012</a></strong></div></td>
     <td><div align="center"><strong><u>13/1/2013</u></strong></div></td>
     <td><div align="center"><strong><u>30/11/2014</u></strong></div></td>
     <td><div align="center"></div></td>
@@ -619,5 +636,109 @@ $(document).ready(function(){
 		<div class="gpBdrBottom"></div>
 	</div>
 </div>
+
+<div class="diagnosa5">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Gejala Osteoarthritis dengan gejala:</p>
+						<p>-Rasa nyeri yang mendalam</p>
+						<p>-Kesulitan memakai baju atau menyisir rambut</p>
+						<p>-Kesulitan mencengkeram benda</p>
+						<p>-Kesulitan duduk atau membungkuk</p>
+						<p>-Sendi terasa hangat saat disentuh</p>
+						<p>-Kekakuan di pagi hari selama kurang dari satu jam</p>
+						<p>-Nyeri saat berjalan</p>
+						<p>-Kekakuan setelah beristirahat</p>
+						<p>-Pembengkakan sendi</p>
+						<p>-Kehilangan gerak pada sendi</p>
+						<p>Hindari:</p>
+						<p>-Makanan yang digoreng dan dipanggang serta makanan berkalori tinggi</p>
+						<p>-Makanan olahan dan makanan yang mengandung pengawet dan aditif</p>
+						<p>-Minuman berkafein seperti teh dan kopi</p>
+						<p>-Buah-buahan seperti lemon, jeruk nipis, dan jeruk</p>
+						<p>-Semua produk susu pasteurisasi</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa5edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+							Pasien menderita Gejala Osteoarthritis dengan gejala:
+							-Rasa nyeri yang mendalam
+							-Kesulitan memakai baju atau menyisir rambut
+							-Kesulitan mencengkeram benda
+							-Kesulitan duduk atau membungkuk
+							-Sendi terasa hangat saat disentuh
+							-Kekakuan di pagi hari selama kurang dari satu jam
+							-Nyeri saat berjalan
+							-Kekakuan setelah beristirahat
+							-Pembengkakan sendi
+							-Kehilangan gerak pada sendi
+							Hindari:
+							-Makanan yang digoreng dan dipanggang serta makanan berkalori tinggi
+							-Makanan olahan dan makanan yang mengandung pengawet dan aditif
+							-Minuman berkafein seperti teh dan kopi
+							-Buah-buahan seperti lemon, jeruk nipis, dan jeruk
+							-Semua produk susu pasteurisasi
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
 </body>
 </html>
