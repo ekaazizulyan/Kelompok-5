@@ -30,6 +30,8 @@ $(document).ready(function(){
 	$(".diagnosa5edit").css('display','none')
 	$(".diagnosa6").css('display','none')
 	$(".diagnosa6edit").css('display','none')
+	$(".diagnosa7").css('display','none')
+	$(".diagnosa7edit").css('display','none')
 	$(".tambahdiagnosa").click(function(){
 		$(".popup").animate({width: 'show'}, 'slow');
 		$(".cancel").click(function(){	
@@ -171,6 +173,27 @@ $(document).ready(function(){
 			
 		})
 	})
+	$(".d7").click(function(){
+		$(".diagnosa7").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa7").css('display','none');
+			$(".diagnosa7edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa7edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa7edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa7edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa7").css('display', 'none');
+			
+		})
+	})
 })
 </script>
 </head>
@@ -208,7 +231,7 @@ $(document).ready(function(){
   <tr>
     <td height="51">Riwayat Penyakit </td>
     <td>:</td>
-    <td colspan="2">Ispa, CAD, Prostat Hypertropi, Derita Alergi, Osteoarthritis, Katarak, Bendungan Paru Ringan </td>
+    <td colspan="2">Ispa, CAD, Prostat Hypertropi, Derita Alergi, Osteoarthritis, Katarak, Edema paru akut </td>
   </tr>
   <tr>
     <td height="55">Diagnosa</td>
@@ -227,7 +250,7 @@ $(document).ready(function(){
   <tr>
     <td height="44"><div align="center" class="d5"><strong><a href="#">5/8/2012</a></strong></div></td>
     <td><div align="center" class="d6"><strong><a href="#">13/1/2013</a></strong></div></td>
-    <td><div align="center"><strong><u>30/11/2014</u></strong></div></td>
+    <td><div align="center" class="d7"><strong><a href="#">30/11/2014</a></strong></div></td>
     <td><div align="center"></div></td>
   </tr>
   <tr>
@@ -834,6 +857,94 @@ $(document).ready(function(){
 								-Warna memudar atau cenderung menguning saat melihat
 								-Pandangan ganda jika melihat dengan satu mata
 								Segera lakukan operasi. 
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa7">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Edema paru akut dengan gejala:</p>
+						<p>-Sesak napas ekstrim atau kesulitan bernapas (dyspnea) yang semakin memburuk ketika anda berbaring</p>
+						<p>-Perasaan tercekik atau seperti tenggelam</p>
+						<p>-Terengah-engah, napas berdesah</p>
+						<p>-Kecemasan, kegelisahan, atau ketakutan</p>
+						<p>-Batuk yang menghasilkan dahak berbusa yang mungkin disertai dengan warna darah</p>
+						<p>-Batuk yang menghasilkan dahak berbusa yang mungkin disertai dengan warna darah</p>
+						<p>-Keringat berlebihan</p>
+						<p>-Kulit pucat</p>
+						<p>-Nyeri dada, terutama jika edema baru disebabkan oleh penyakit jantung</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa7edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+								Pasien menderita Edema paru akut dengan gejala:
+								-Sesak napas ekstrim atau kesulitan bernapas (dyspnea) yang semakin memburuk ketika anda berbaring
+								-Perasaan tercekik atau seperti tenggelam
+								-Terengah-engah, napas berdesah
+								-Kecemasan, kegelisahan, atau ketakutan
+								-Batuk yang menghasilkan dahak berbusa yang mungkin disertai dengan warna darah
+								-Keringat berlebihan
+								-Kulit pucat
+								-Nyeri dada, terutama jika edema baru disebabkan oleh penyakit jantung
 						</textarea>
 						<br><br><br>
 						<tr>
