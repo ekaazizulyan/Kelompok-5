@@ -22,6 +22,10 @@ $(document).ready(function(){
 	$(".diagnosa1edit").css('display','none')
 	$(".diagnosa2").css('display','none')
 	$(".diagnosa2edit").css('display','none')
+	$(".diagnosa3").css('display','none')
+	$(".diagnosa3edit").css('display','none')
+	$(".diagnosa4").css('display','none')
+	$(".diagnosa4edit").css('display','none')
 	$(".tambahdiagnosa").click(function(){
 		$(".popup").animate({width: 'show'}, 'slow');
 		$(".cancel").click(function(){	
@@ -79,6 +83,48 @@ $(document).ready(function(){
 			
 		})
 	})
+	$(".d3").click(function(){
+		$(".diagnosa3").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa3").css('display','none');
+			$(".diagnosa3edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa3edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa3edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa3edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa3").css('display', 'none');
+			
+		})
+	})
+	$(".d4").click(function(){
+		$(".diagnosa4").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa4").css('display','none');
+			$(".diagnosa4edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa4edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa4edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa4edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa4").css('display', 'none');
+			
+		})
+	})
 })
 </script>
 </head>
@@ -129,8 +175,8 @@ $(document).ready(function(){
   <tr>
     <td width="237" height="44" ><div align="center" class="d1"><strong><a href="#">21/5/2008</a></strong></div></td>
     <td width="268"><div align="center" class="d2"><strong><a href="#">31/12/2009</a></strong></div></td>
-    <td width="259"><div align="center"><strong><u>12/3/2011</u></strong></div></td>
-    <td width="269"><div align="center"><strong><u>1/9/2011</u></strong></div></td>
+    <td width="259"><div align="center" class="d3"><strong><a href="#">12/3/2011</a></strong></div></td>
+    <td width="269"><div align="center" class="d4"><strong><a href="#">1/9/2011</a></strong></div></td>
   </tr>
   <tr>
     <td height="44"><div align="center"><strong><u>5/8/2012</u></strong></div></td>
@@ -353,6 +399,203 @@ $(document).ready(function(){
 							Hindari: 
 							-Menyentuh bagian wajah, terutama mulut, hidung, dan mata, agar Anda terlindung dari penyebaran virus dan bakteri. 
 							-Merokok 
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa3">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Prostat Hypertropi dengan gejala:</p>
+						<p>-Pencaran saat kencing lemah</p>
+						<p>-Aliran kencing terputus-putus</p>
+						<p>-Tidak lampias saat berkemih</p>
+						<p>-Inkontinensia(beser)</p>
+						<p>-Kencing tidak tuntas</p>
+						<p>-Mengejan saat kencing</p>
+						<p>-Infeksi saluran kemih</p>
+						<p>-Rasa ingin kencing lagi sesudah kencing</p>
+						<p>-Sering kencing saat malam hari</p>
+						<p>Hindari:</p>
+						<p>-Jangan menunda buang air kecil, lakukan segera setelah perasaan ingin kencing muncul</p>
+						<p>-Hindari alkohol dan kafein, terutama setelah makan malam</p>
+						<p>-Jangan banyak minum sekaligus dan hindari minum air 2 jam sebelum tidur.</p>
+						<p>-Lakukan latihan Kegel (latihan penguatan otot panggul).</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa3edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+							Pasien menderita Prostat Hypertropi dengan gejala:
+							Pencaran saat kencing lemah
+							-Aliran kencing terputus-putus
+							-Tidak lampias saat berkemih
+							-Inkontinensia(beser)
+							-Kencing tidak tuntas
+							-Mengejan saat kencing
+							-Infeksi saluran kemih
+							-Rasa ingin kencing lagi sesudah kencing
+							-Sering kencing saat malam hari 
+							Hindari: 
+							-Jangan menunda buang air kecil, lakukan segera setelah perasaan ingin kencing muncul 
+							-Hindari alkohol dan kafein, terutama setelah makan malam 
+							-Jangan banyak minum sekaligus dan hindari minum air 2 jam sebelum tidur. 
+							-Lakukan latihan Kegel (latihan penguatan otot panggul). 
+						
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa4">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Prostat Hypertropi dengan gejala:</p>
+						<p>-Berat badan yang berlebihan atau sebaliknya berat badan kurang.</p>
+						<p>-Kelelahan terus menerus dalam beberapa saat dan tidak lenyap walaupun telah beristirahat.</p>
+						<p>-Terjadi pembengkakan di sekitar mata, tangan, abdomen, pergelangan kaki.</p>
+						<p>-Denyut jantung yang cepat dan berdebar-debar, khususnya setelah makan</p>
+						<p>-Keringat yang berlebihan walaupun tidak berolahraga.</p>
+						<p>Hindari:</p>
+						<p>Memakan makanan sebagai berikut:</p>
+						<p>-Kacang kedelai</p>
+						<p>-Tepung terigu</p>
+						<p>-Kacang</p>
+						<p>-Susu sapi</p>
+						<p>-Telur</p>
+						<p>-Ikan dan daging</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa4edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+							Pasien menderita Prostat Hypertropi dengan gejala:
+							-Berat badan yang berlebihan atau sebaliknya berat badan kurang.
+							-Kelelahan terus menerus dalam beberapa saat dan tidak lenyap walaupun telah beristirahat.
+							-Terjadi pembengkakan di sekitar mata, tangan, abdomen, pergelangan kaki.
+							-Denyut jantung yang cepat dan berdebar-debar, khususnya setelah makan.
+							-Keringat yang berlebihan walaupun tidak berolahraga.
+							Hindari:
+							Memakan makanan sebagai berikut:
+							-Kacang kedelai
+							-Tepung terigu
+							-Kacang
+							-Susu sapi
+							-Telur 
+							-Ikan dan daging 
 						</textarea>
 						<br><br><br>
 						<tr>
