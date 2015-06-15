@@ -1,4 +1,7 @@
-
+body{
+  background:rgb(42, 151, 245);
+  font-family:'Open Sans',sans-serif;
+}
 
 
 ol, ul {
@@ -105,10 +108,10 @@ body {
 		width:487px; 
 		position:fixed; 
 		z-index:1200; 
-		font-size:30px;
+		background:gray; 
 		left:50%; 
 		top:50%; 
-		margin-left:-300px; 
+		margin-left:-244px; 
 		margin-top:-276px;
 		}
 	.gpBdrLeftTop {
@@ -173,8 +176,8 @@ body {
 		width:31px;
 		height:31px;
 		position:absolute;
-		right:-300px;
-		top:-300px;
+		right:-15px;
+		top:-15px;
 		background:url(../images/grn_pp_cls_btn_normal.png) no-repeat;
 		
 		}
@@ -186,5 +189,4 @@ body {
 		padding:25px;
 		font-weight:normal;
 		}
-	
 /*---popup styles ends here ----- */
