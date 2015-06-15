@@ -1,0 +1,969 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Lihat Data Pasien</title>
+<link href="css/styles.css" rel="stylesheet" media="screen"  />
+<style type="text/css">
+<!--
+.style1 {
+	
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+-->
+</style>
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script  type="text/javascript" language="javascript">
+$(document).ready(function(){
+	$(".popup").css('display','none')
+	$(".diagnosa1").css('display','none')
+	$(".diagnosa1edit").css('display','none')
+	$(".diagnosa2").css('display','none')
+	$(".diagnosa2edit").css('display','none')
+	$(".diagnosa3").css('display','none')
+	$(".diagnosa3edit").css('display','none')
+	$(".diagnosa4").css('display','none')
+	$(".diagnosa4edit").css('display','none')
+	$(".diagnosa5").css('display','none')
+	$(".diagnosa5edit").css('display','none')
+	$(".diagnosa6").css('display','none')
+	$(".diagnosa6edit").css('display','none')
+	$(".diagnosa7").css('display','none')
+	$(".diagnosa7edit").css('display','none')
+	$(".tambahdiagnosa").click(function(){
+		$(".popup").animate({width: 'show'}, 'slow');
+		$(".cancel").click(function(){	
+			$(".popup").css('display', 'none');
+			document.getElementById("textfield").value = "";
+		})
+		$(".save").click(function(){	
+			$(".popup").css('display', 'none');
+		})
+		$(".closeBtn").click(function(){			
+			$(".popup").css('display', 'none');
+			
+		})
+	})
+	$(".d1").click(function(){
+		$(".diagnosa1").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa1").css('display','none');
+			$(".diagnosa1edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa1edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa1edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa1edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa1").css('display', 'none');
+			
+		})
+	})
+	
+	$(".d2").click(function(){
+		$(".diagnosa2").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa2").css('display','none');
+			$(".diagnosa2edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa2edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa2edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa2edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa2").css('display', 'none');
+			
+		})
+	})
+	$(".d3").click(function(){
+		$(".diagnosa3").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa3").css('display','none');
+			$(".diagnosa3edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa3edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa3edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa3edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa3").css('display', 'none');
+			
+		})
+	})
+	$(".d4").click(function(){
+		$(".diagnosa4").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa4").css('display','none');
+			$(".diagnosa4edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa4edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa4edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa4edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa4").css('display', 'none');
+			
+		})
+	})
+	$(".d5").click(function(){
+		$(".diagnosa5").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa5").css('display','none');
+			$(".diagnosa5edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa5edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa5edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa5edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa5").css('display', 'none');
+			
+		})
+	})
+	$(".d6").click(function(){
+		$(".diagnosa6").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa6").css('display','none');
+			$(".diagnosa6edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa6edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa6edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa6edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa6").css('display', 'none');
+			
+		})
+	})
+	$(".d7").click(function(){
+		$(".diagnosa7").animate({width: 'show'}, 'slow');
+		$(".edit").click(function(){
+			$(".diagnosa7").css('display','none');
+			$(".diagnosa7edit").animate({width: 'show'}, 'slow');
+			$(".cancel").click(function(){	
+				$(".diagnosa7edit").css('display', 'none');
+			})
+			$(".save").click(function(){	
+				$(".diagnosa7edit").css('display', 'none');
+			})
+			$(".closeBtn").click(function(){			
+				$(".diagnosa7edit").css('display', 'none');
+				
+			})
+		})
+		$(".closeBtn").click(function(){			
+			$(".diagnosa7").css('display', 'none');
+			
+		})
+	})
+})
+</script>
+</head>
+
+<body>
+<table width="1053" height="469" align="center" style="border-collapse:collapse;">
+  <tr>
+    <td height="104" colspan="4"><div align="center" class="style1">Pasien: Bobo </div></td>
+  </tr>
+  <tr>
+    <td width="214" height="51">Nama</td>
+    <td width="22"><div align="left">:</div></td>
+    <td colspan="2">Bobo (211) </td>
+  </tr>
+  <tr>
+    <td height="51">Tempat/Tanggal Lahir </td>
+    <td>:</td>
+    <td colspan="2">Ambon/13 Februari 1970 </td>
+  </tr>
+  <tr>
+    <td height="51">Alamat</td>
+    <td>:</td>
+    <td colspan="2">Jalan Tambang Emas No. 20 </td>
+  </tr>
+  <tr>
+    <td height="51">Golongan Darah </td>
+    <td>:</td>
+    <td colspan="2">O</td>
+  </tr>
+  <tr>
+    <td height="51">Email</td>
+    <td>:</td>
+    <td colspan="2">Bobo@yahoo.com</td>
+  </tr>
+  <tr>
+    <td height="51">Riwayat Penyakit </td>
+    <td>:</td>
+    <td colspan="2">Ispa, CAD, Prostat Hypertropi, Derita Alergi, Osteoarthritis, Katarak, Edema paru akut </td>
+  </tr>
+  <tr>
+    <td height="55">Diagnosa</td>
+    <td>:</td>
+    <td width="504">&nbsp;</td>
+    <td width="293">&nbsp;</td>
+  </tr>
+</table>
+<table width="1053" height="148" align="center" style="border-collapse:collapse;">
+  <tr>
+    <td width="237" height="44" ><div align="center" class="d1"><strong><a href="#">21/5/2008</a></strong></div></td>
+    <td width="268"><div align="center" class="d2"><strong><a href="#">31/12/2009</a></strong></div></td>
+    <td width="259"><div align="center" class="d3"><strong><a href="#">12/3/2011</a></strong></div></td>
+    <td width="269"><div align="center" class="d4"><strong><a href="#">1/9/2011</a></strong></div></td>
+  </tr>
+  <tr>
+    <td height="44"><div align="center" class="d5"><strong><a href="#">5/8/2012</a></strong></div></td>
+    <td><div align="center" class="d6"><strong><a href="#">13/1/2013</a></strong></div></td>
+    <td><div align="center" class="d7"><strong><a href="#">30/11/2014</a></strong></div></td>
+    <td><div align="center"></div></td>
+  </tr>
+  <tr>
+    <td height="56"><label> </label>
+        <div align="center">
+          
+		   <a href="mailto:bobo@yahoo.com?&subject=Diagnosa&body=Nama: Bobo (211)%0A%0ATempat/Tanggal Lahir : Ambon/13 Februari 1970%0A%0AAlamat: Jalan Tambang Emas No. 20%0A%0AGolongan Darah : O%0A%0AEmail :Bobo@yahoo.com%0A%0Riwayat Penyakit: Ispa, CND, Prostat Hypertropi, Derita Alergi, Movicox Iny, Katarak, Bendungan Paru Ringan%0A%0ADiagnosa:%0A%0APasien menderita parkinson dengan gejala:%0A%0A-merasa lemah atau terasa lebih kaku pada sebagian tubuh%0A%0A-gemetaran halus pada salah satu tangan saat istirahat%0A%0AHindari:%0A%0Amakanan dengan gula tinggi, berpengawet, junk food, alkohol dan minuman bersoda  ">Kirim ke Pasien</a>
+		   </div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><label> </label>
+        <div align="center">
+          <input name="Tambah Diagnosa " type="button" class="tambahdiagnosa" id="Tambah Diagnosa " value="Tambah Diagnosa " />
+      </div></td>
+  </tr>
+</table>
+
+<div class="popup">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+						     Pasien menderita parkinson dengan gejala:
+						          -merasa lemah atau terasa lebih kaku pada sebagian tubuh
+						          -gemetaran halus pada salah satu tangan saat istirahat
+						     Hindari:
+						     makanan dengan gula tinggi, berpengawet, junk food, alkohol dan minuman bersoda
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa2">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita CAD dengan gejala:</p>
+						<p>-Sesak napas</p>
+						<p>-Mual, muntah, dan berkeringat dingin</p>
+						<p>-Perasaan gangguan pencernaan atau mulas</p>
+						<p>-Unexplained kelelahan setelah aktivitas (lebih umum pada wanita)</p>
+						<p>-Pusing atau sakit kepala ringan</p>
+						<p>-palpitasi</p>
+						<p>Hindari:</p>
+						<p>-Makanan mengandung kolesterol.</p>
+						<p>-Makanan mengandung trigleserin.</p>
+						<p>-Makanan mengandung gula alkoholik. Minuman alkohol, durian dan tape.</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa2edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+							Pasien menderita CAD dengan gejala: 
+							-Sesak napas 
+							-Mual, muntah, dan berkeringat dingin 
+							-Perasaan gangguan pencernaan atau mulas 
+							-Unexplained kelelahan setelah aktivitas
+							-Pusing atau sakit kepala ringan 
+							-palpitasi 
+							Hindari: 
+							-Makanan mengandung kolesterol. 
+							-Makanan mengandung trigleserin. 
+							-Makanan mengandung gula alkoholik. Minuman alkohol, durian dan tape. 
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa1">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita ISPA dengan gejala:</p>
+						<p>-Hidung tersumbat atau berair.</p>
+						<p>-Para-paru terasa terhambat.</p>
+						<p>-Batuk-batuk dan tenggorokan terasa sakit.</p>
+						<p>-Kerap merasa kelelahan.</p>
+						<p>-Tubuh merasa sakit.</p>
+						<p>Hindari:</p>
+						<p>-Menyentuh bagian wajah, terutama mulut, hidung, dan mata, agar Anda terlindung dari penyebaran virus dan bakteri.</p>
+						<p>-Merokok</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa1edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+						    Pasien menderita ISPA dengan gejala: 
+							-Hidung tersumbat atau berair. 
+							-Para-paru terasa terhambat. 
+							-Batuk-batuk dan tenggorokan terasa sakit. 
+							-Kerap merasa kelelahan. 
+							-Tubuh merasa sakit. 
+							Hindari: 
+							-Menyentuh bagian wajah, terutama mulut, hidung, dan mata, agar Anda terlindung dari penyebaran virus dan bakteri. 
+							-Merokok 
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa3">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Prostat Hypertropi dengan gejala:</p>
+						<p>-Pencaran saat kencing lemah</p>
+						<p>-Aliran kencing terputus-putus</p>
+						<p>-Tidak lampias saat berkemih</p>
+						<p>-Inkontinensia(beser)</p>
+						<p>-Kencing tidak tuntas</p>
+						<p>-Mengejan saat kencing</p>
+						<p>-Infeksi saluran kemih</p>
+						<p>-Rasa ingin kencing lagi sesudah kencing</p>
+						<p>-Sering kencing saat malam hari</p>
+						<p>Hindari:</p>
+						<p>-Jangan menunda buang air kecil, lakukan segera setelah perasaan ingin kencing muncul</p>
+						<p>-Hindari alkohol dan kafein, terutama setelah makan malam</p>
+						<p>-Jangan banyak minum sekaligus dan hindari minum air 2 jam sebelum tidur.</p>
+						<p>-Lakukan latihan Kegel (latihan penguatan otot panggul).</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa3edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+							Pasien menderita Prostat Hypertropi dengan gejala:
+							Pencaran saat kencing lemah
+							-Aliran kencing terputus-putus
+							-Tidak lampias saat berkemih
+							-Inkontinensia(beser)
+							-Kencing tidak tuntas
+							-Mengejan saat kencing
+							-Infeksi saluran kemih
+							-Rasa ingin kencing lagi sesudah kencing
+							-Sering kencing saat malam hari 
+							Hindari: 
+							-Jangan menunda buang air kecil, lakukan segera setelah perasaan ingin kencing muncul 
+							-Hindari alkohol dan kafein, terutama setelah makan malam 
+							-Jangan banyak minum sekaligus dan hindari minum air 2 jam sebelum tidur. 
+							-Lakukan latihan Kegel (latihan penguatan otot panggul). 
+						
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa4">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Prostat Hypertropi dengan gejala:</p>
+						<p>-Berat badan yang berlebihan atau sebaliknya berat badan kurang.</p>
+						<p>-Kelelahan terus menerus dalam beberapa saat dan tidak lenyap walaupun telah beristirahat.</p>
+						<p>-Terjadi pembengkakan di sekitar mata, tangan, abdomen, pergelangan kaki.</p>
+						<p>-Denyut jantung yang cepat dan berdebar-debar, khususnya setelah makan</p>
+						<p>-Keringat yang berlebihan walaupun tidak berolahraga.</p>
+						<p>Hindari:</p>
+						<p>Memakan makanan sebagai berikut:</p>
+						<p>-Kacang kedelai</p>
+						<p>-Tepung terigu</p>
+						<p>-Kacang</p>
+						<p>-Susu sapi</p>
+						<p>-Telur</p>
+						<p>-Ikan dan daging</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa4edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+							Pasien menderita Prostat Hypertropi dengan gejala:
+							-Berat badan yang berlebihan atau sebaliknya berat badan kurang.
+							-Kelelahan terus menerus dalam beberapa saat dan tidak lenyap walaupun telah beristirahat.
+							-Terjadi pembengkakan di sekitar mata, tangan, abdomen, pergelangan kaki.
+							-Denyut jantung yang cepat dan berdebar-debar, khususnya setelah makan.
+							-Keringat yang berlebihan walaupun tidak berolahraga.
+							Hindari:
+							Memakan makanan sebagai berikut:
+							-Kacang kedelai
+							-Tepung terigu
+							-Kacang
+							-Susu sapi
+							-Telur 
+							-Ikan dan daging 
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa5">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Osteoarthritis dengan gejala:</p>
+						<p>-Rasa nyeri yang mendalam</p>
+						<p>-Kesulitan memakai baju atau menyisir rambut</p>
+						<p>-Kesulitan mencengkeram benda</p>
+						<p>-Kesulitan duduk atau membungkuk</p>
+						<p>-Sendi terasa hangat saat disentuh</p>
+						<p>-Kekakuan di pagi hari selama kurang dari satu jam</p>
+						<p>-Nyeri saat berjalan</p>
+						<p>-Kekakuan setelah beristirahat</p>
+						<p>-Pembengkakan sendi</p>
+						<p>-Kehilangan gerak pada sendi</p>
+						<p>Hindari:</p>
+						<p>-Makanan yang digoreng dan dipanggang serta makanan berkalori tinggi</p>
+						<p>-Makanan olahan dan makanan yang mengandung pengawet dan aditif</p>
+						<p>-Minuman berkafein seperti teh dan kopi</p>
+						<p>-Buah-buahan seperti lemon, jeruk nipis, dan jeruk</p>
+						<p>-Semua produk susu pasteurisasi</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa5edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+							Pasien menderita Osteoarthritis dengan gejala:
+							-Rasa nyeri yang mendalam
+							-Kesulitan memakai baju atau menyisir rambut
+							-Kesulitan mencengkeram benda
+							-Kesulitan duduk atau membungkuk
+							-Sendi terasa hangat saat disentuh
+							-Kekakuan di pagi hari selama kurang dari satu jam
+							-Nyeri saat berjalan
+							-Kekakuan setelah beristirahat
+							-Pembengkakan sendi
+							-Kehilangan gerak pada sendi
+							Hindari:
+							-Makanan yang digoreng dan dipanggang serta makanan berkalori tinggi
+							-Makanan olahan dan makanan yang mengandung pengawet dan aditif
+							-Minuman berkafein seperti teh dan kopi
+							-Buah-buahan seperti lemon, jeruk nipis, dan jeruk
+							-Semua produk susu pasteurisasi
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa6">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Katarak dengan gejala:</p>
+						<p>-Pandangan mata yang kabur, suram atau seperti ada bayangan awan atau asap</p>
+						<p>-Sulit melihat pada malam hari</p>
+						<p>-Sensitif pada cahaya</p>
+						<p>-Terdapat lingkaran cahaya saat memandang sinar</p>
+						<p>-Membutuhkan cahaya terang untuk membaca atau ketika beraktifitas</p>
+						<p>-Sering mengganti kacamata atau lensa kontak karena ketidaknyamanan tersebut</p>
+						<p>-Warna memudar atau cenderung menguning saat melihat</p>
+						<p>-Pandangan ganda jika melihat dengan satu mata</p>
+						<p>Segera lakukan operasi.</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa6edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+								Pasien menderita Katarak dengan gejala:
+								-Pandangan mata yang kabur, suram atau seperti ada bayangan awan atau asap
+								-Sulit melihat pada malam hari
+								-Sensitif pada cahaya
+								-Terdapat lingkaran cahaya saat memandang sinar
+								-Membutuhkan cahaya terang untuk membaca atau ketika beraktifitas
+								-Sering mengganti kacamata atau lensa kontak karena ketidaknyamanan tersebut
+								-Warna memudar atau cenderung menguning saat melihat
+								-Pandangan ganda jika melihat dengan satu mata
+								Segera lakukan operasi. 
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa7">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<p>Pasien menderita Edema paru akut dengan gejala:</p>
+						<p>-Sesak napas ekstrim atau kesulitan bernapas (dyspnea) yang semakin memburuk ketika anda berbaring</p>
+						<p>-Perasaan tercekik atau seperti tenggelam</p>
+						<p>-Terengah-engah, napas berdesah</p>
+						<p>-Kecemasan, kegelisahan, atau ketakutan</p>
+						<p>-Batuk yang menghasilkan dahak berbusa yang mungkin disertai dengan warna darah</p>
+						<p>-Batuk yang menghasilkan dahak berbusa yang mungkin disertai dengan warna darah</p>
+						<p>-Keringat berlebihan</p>
+						<p>-Kulit pucat</p>
+						<p>-Nyeri dada, terutama jika edema baru disebabkan oleh penyakit jantung</p>
+						<tr>
+						<td>
+						<input type="button" class ="edit" value="Edit" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+<div class="diagnosa7edit">
+	<div class="popupGrayBg"></div>
+	<div class="QTPopupCntnr">
+		<div class="gpBdrLeftTop"></div>
+		<div class="gpBdrRightTop"></div>
+		<div class="gpBdrTop"></div>
+		<div class="gpBdrLeft">
+			<div class="gpBdrRight">
+				<div class="caption">
+					Diagnosa
+				</div>
+				<a href="#" class="closeBtn" title="Close"></a>
+				
+				<div class="content">
+					<table width="100%" cellpadding="0" cellspacing="0">
+						
+						<textarea id="textfield" cols="57" rows="25" align= "left">
+								Pasien menderita Edema paru akut dengan gejala:
+								-Sesak napas ekstrim atau kesulitan bernapas (dyspnea) yang semakin memburuk ketika anda berbaring
+								-Perasaan tercekik atau seperti tenggelam
+								-Terengah-engah, napas berdesah
+								-Kecemasan, kegelisahan, atau ketakutan
+								-Batuk yang menghasilkan dahak berbusa yang mungkin disertai dengan warna darah
+								-Keringat berlebihan
+								-Kulit pucat
+								-Nyeri dada, terutama jika edema baru disebabkan oleh penyakit jantung
+						</textarea>
+						<br><br><br>
+						<tr>
+						<td>
+						<input type="button" class ="cancel" value="Cancel" class="gbtn_s"  />
+						</td><td>
+						<input type="button" class ="save" value="Save" class="gbtn_s"  />
+						</td>
+						</tr>
+					
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="gpBdrLeftBottom"></div>
+		<div class="gpBdrRightBottom"></div>
+		<div class="gpBdrBottom"></div>
+	</div>
+</div>
+
+</body>
+</html>
