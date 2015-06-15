@@ -15,9 +15,6 @@
    <script src="script.js"></script>
 	</head>
 	<body>
-  <?php
-  $nama = "drg.wahyu";
-  ?>
 		<nav role="navigation" class="navbar navbar-inverse">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -42,11 +39,13 @@
 <input type="radio" name="tab-menu" class="tab-menu-radio" id="tab-menu1" checked />
 <label for="tab-menu1" class="tab-menu">PROFILE</label>
 
-<input type="radio" name="tab-menu" class="tab-menu-radio" id="tab-menu2"/>
-<label for="tab-menu2" class="tab-menu">DIAGNOSA</label>
+<a href="../RPL/index_2.html">
+<label for="" class="tab-menu">DIAGNOSA</label>
+</a>
 
-<input type="radio" name="tab-menu" class="tab-menu-radio" id="tab-menu3"/>
-<label for="tab-menu3" class="tab-menu">RESEP</label>
+<a href="../Dokter_(RESEP)/dokter_resep.html">
+<label for="" class="tab-menu">RESEP</label>
+</a>
 <!-- End Menu tab -->
 
 
@@ -128,45 +127,6 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-<div class="tab-content">
-<div class="tab tab-2">
-  <div class="theme col-md-8 col-md-offset-6">
-  <ul class="nav nav-pills">
-    <li class="active" role="presentation"><a data-toggle="modal" data-target="#mymodal" href="#">Tambah</a></li>
-    <table class="table">
-        <thead>
-          <tr>
-            <th>NO</th>
-            <th>TANGGAL</th>
-            <th>ID PASIEN</th>
-            <th>TINDAKAN</th>
-          </tr>
-    </thead>
-    </ul>
-    <tbody>
-        <tr class="active">
-            <td>1</td>
-            <td>04/07/2014</td>
-            <td>A01</td>
-            <td><a data-toggle="modal" data-target="#Mymodal" href="#"<button class="btn btn-primary">Lihat&nbsp&nbsp<span class="glyphicon glyphicon-eye-open"></span></button></a></td>
-        </tr>
-        <tr class="success">
-            <td>2</td>
-            <td>01/07/2014</td>
-            <td>A02</td>
-            <td><a data-toggle="modal" data-target="#MYmodal" href="#"<button class="btn btn-primary">Lihat&nbsp&nbsp<span class="glyphicon glyphicon-eye-open"></span></button></a></td>
-        </tr>
-        <tr class="info">
-            <td>3</td>
-            <td>05/07/2014</td>
-            <td>A03</td>
-            <td><a data-toggle="modal" data-target="#MYModal" href="#"<button class="btn btn-primary">Lihat&nbsp&nbsp<span class="glyphicon glyphicon-eye-open"></span></button></a></td>
-        </tr>
-        </tbody>
-</table>
-</div>
-</div>
 
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
